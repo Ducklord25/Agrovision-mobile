@@ -1,0 +1,35 @@
+name: agrovision
+
+description: Offline smart agriculture decision app
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.68.0
+  tflite_flutter: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/logo.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/branding/agrovision_logo.png
+    - assets/dataset/crop_dataset.csv
+    - assets/models/crop_model.tflite
